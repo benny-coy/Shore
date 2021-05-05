@@ -1,0 +1,111 @@
+
+
+<html>
+    <head>
+        <title>Rubies</title>
+        <link rel="stylesheet" href="project.css">
+    </head>
+
+    <body>
+        <div>
+            <nav>
+                <h1>Rubies</h1>
+                    <a href="" class="link"> Home </a>
+                    <a href="" class="link"> About </a>
+                    <a href="" class="link"> Contact Us </a>
+            </nav>
+
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                <img src="https://cdn.pixabay.com/photo/2020/10/15/22/34/women-5658159_960_720.png" style="width: 100%">
+                </div>
+                
+                
+                <div class="mySlides fade">
+                <img src="https://files.lifehacks.io/wp-content/uploads/most-likely-to-questions-2.jpg" style="width: 100%">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="https://st2.depositphotos.com/1007566/5905/v/600/depositphotos_59059465-stock-illustration-best-friends-design.jpg" style="width: 100%">
+                </div>
+            </div>
+            
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+
+            <section class="container" >
+                
+                <div class="section1">
+                    <h2>Who are we</h2>
+                <p>We are a community of vibrant <br>
+                    females from all ages and <br>
+                    walks of life.</p>
+                 </div>
+
+                <div class="section3">
+                    <h2>What we do</h2>
+                    <p>We create a safe place for females <br> 
+                        to build healthy relationships <br>
+                        with and learn from one another.  <br>
+                        We do this by giving you access <br>
+                        to female friends in the city you <br>
+                        live in. <br>
+                    <p>Join our community and become a <br>
+                       female friend. </p>
+                            
+                        </body>
+                         </p> 
+                </div>
+                
+                <div class="JoinUsBox">
+                      <h2>Join Us</h2>
+                        <form>
+                            <input type="text" placeholder="First Name" required><br><br>
+                            
+                            <input type="text" placeholder="last Name" required><br><br>
+                            
+                            <input type="password" placeholder="Password" required><br><br>
+                            
+                            <input type="password" placeholder="Confirm Password" required><br><br>
+           
+                            <input type="tel" placeholder="Phone Number" required><br><br>
+           
+                            <input type="email" placeholder="E-mail Address" required><br><br>
+                            
+                           <button>Submit</button>
+           
+         
+                </div>
+            </section>
+
+            <footer>
+                
+             </footer>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+ 
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+         }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+   </script>
+    </body>
+</html>
